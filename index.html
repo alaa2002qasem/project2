@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atelier - Modern Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .serif-font { font-family: 'Playfair Display', serif; }
+    </style>
+</head>
+<body class="bg-[#fcfcfc]">
+
+    <main class="w-full max-w-[910px] mx-auto bg-white shadow-sm overflow-hidden">
+        
+        <header class="flex items-center justify-between px-6 py-6 border-b border-gray-50">
+            <nav class="flex items-center gap-6">
+                <i class="fa-solid fa-magnifying-glass text-sm cursor-pointer hover:opacity-50"></i>
+                <ul class="hidden md:flex items-center gap-6 text-[11px] tracking-widest uppercase font-medium">
+                    <li><a href="#" class="text-black">Home</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-black transition">Shop</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-black transition">Collections</a></li>
+                </ul>
+            </nav>
+
+            <div class="serif-font text-2xl tracking-[0.2em] font-medium absolute left-1/2 -translate-x-1/2">
+                ATELIER
+            </div>
+
+            <div class="flex items-center gap-5 text-sm">
+                <i class="fa-solid fa-user cursor-pointer hover:opacity-50 hidden sm:block"></i>
+                <i class="fa-solid fa-bag-shopping cursor-pointer hover:opacity-50"></i>
+            </div>
+        </header>
+
+        <section class="relative w-full h-[500px] md:h-[795px] overflow-hidden group">
+            <img 
+                src="img/unnamed.png" 
+                alt="Modern Home Interior" 
+                class="absolute inset-0 w-full h-full object-cover transition-transform duration-[2s] group-hover:scale-110"
+            >
+
+            <div class="absolute inset-0 bg-white/10 backdrop-blur-[1.5px]"></div>
+
+            <div class="absolute inset-0 flex flex-col items-center justify-center text-center px-8">
+                <span class="uppercase tracking-[0.4em] text-[10px] md:text-xs mb-6 text-gray-800 font-light">
+                    New Collection
+                </span>
+                
+                <h1 class="serif-font text-gray-900 text-4xl md:text-7xl leading-[1.15] mb-12 max-w-2xl">
+                    Quiet Luxury for the <br class="hidden md:block"> Modern Home
+                </h1>
+
+                <button class="bg-black text-white px-12 py-4 text-[10px] uppercase tracking-[0.3em] font-medium hover:bg-neutral-800 transition-all duration-500 shadow-xl">
+                    Explore the Edit
+                </button>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+</html>

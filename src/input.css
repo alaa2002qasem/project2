@@ -1,0 +1,5 @@
+@import "tailwindcss";
+
+.bg-custom {
+  background-color: oklch(97% 0 0)
+}
