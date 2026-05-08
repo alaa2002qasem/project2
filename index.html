@@ -3,109 +3,156 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Atelier - Modern Home</title>
+    <title>Atelier - Modern Home Luxury</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
     
     <style>
-        body { font-family: 'Inter', sans-serif; }
-        .serif-font { font-family: 'Playfair Display', serif; }
+        body { 
+            font-family: 'Inter', sans-serif; 
+            scroll-behavior: smooth;
+        }
+        .serif-font { 
+            font-family: 'Playfair Display', serif !important; 
+        }
+        /* تحسين مظهر السكرول بار */
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: #f1f1f1; }
+        ::-webkit-scrollbar-thumb { background: #1C1917; }
     </style>
 </head>
-<body class="bg-[#fcfcfc]">
+<body class="bg-[#fcfcfc] text-[#1C1917]">
 
     <main class="w-full max-w-[1344px] mx-auto bg-white shadow-sm overflow-hidden">
         
-        <header class="flex items-center justify-between px-6 py-6 border-b border-gray-50">
-            <nav class="flex items-center gap-6">
-                <i class="fa-solid fa-magnifying-glass text-sm cursor-pointer hover:opacity-50"></i>
-                <ul class="hidden md:flex items-center gap-6 text-[11px] tracking-widest uppercase font-medium">
-                    <li><a href="#" class="text-black">Home</a></li>
-                    <li><a href="#" class="text-gray-400 hover:text-black transition">Shop</a></li>
-                    <li><a href="#" class="text-gray-400 hover:text-black transition">Collections</a></li>
+        <header class="flex items-center justify-between px-8 py-8 border-b border-gray-50 relative bg-white z-50">
+            <nav class="flex items-center gap-8">
+                <i class="fa-solid fa-magnifying-glass text-sm cursor-pointer hover:opacity-50 transition-opacity"></i>
+                <ul class="hidden md:flex items-center gap-8 text-[11px] tracking-[0.25em] uppercase font-medium">
+                    <li><a href="#" class="hover:text-gray-400 transition-colors">Home</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-black transition-colors">Shop</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-black transition-colors">Collections</a></li>
                 </ul>
             </nav>
 
-            <div class="serif-font text-2xl tracking-[0.2em] font-medium absolute left-1/2 -translate-x-1/2">
+            <div class="serif-font text-2xl tracking-[0.3em] font-medium absolute left-1/2 -translate-x-1/2">
                 ATELIER
             </div>
 
-            <div class="flex items-center gap-5 text-sm">
-                <i class="fa-solid fa-user cursor-pointer hover:opacity-50 hidden sm:block"></i>
-                <i class="fa-solid fa-bag-shopping cursor-pointer hover:opacity-50"></i>
+            <div class="flex items-center gap-6 text-sm">
+                <i class="fa-solid fa-user cursor-pointer hover:opacity-50 hidden sm:block transition-opacity"></i>
+                <div class="relative cursor-pointer hover:opacity-50 transition-opacity">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span class="absolute -top-2 -right-2 bg-black text-white text-[9px] w-4 h-4 rounded-full flex items-center justify-center">0</span>
+                </div>
             </div>
         </header>
 
-        <section class="relative w-full h-[500px] md:h-[795px] overflow-hidden group">
+        <section class="relative w-full h-[600px] md:h-[800px] overflow-hidden group">
             <img 
                 src="img/unnamed.webp" 
                 alt="Modern Home Interior" 
-                class="absolute inset-0 w-full h-full object-cover transition-transform duration-[2s] group-hover:scale-110"
+                class="absolute inset-0 w-full h-full object-cover transition-transform duration-[3s] ease-out group-hover:scale-105"
             >
+            <div class="absolute inset-0 bg-black/5"></div>
 
-            <div class="absolute inset-0 bg-white/5"></div>
-
-            <div class="absolute inset-0 flex flex-col items-center justify-center text-center px-8">
-                <span class="uppercase tracking-[0.4em] text-[10px] md:text-xs mb-6 text-gray-800 font-light">
+            <div class="absolute inset-0 flex flex-col items-center justify-center text-center px-8 z-10">
+                <span class="uppercase tracking-[0.5em] text-[10px] md:text-xs mb-8 text-gray-800 font-light bg-white/20 backdrop-blur-sm px-4 py-1">
                     New Collection
                 </span>
                 
-                <h1 class="serif-font text-gray-900 text-4xl md:text-7xl leading-[1.15] mb-12 max-w-2xl">
+                <h1 class="serif-font text-gray-900 text-5xl md:text-8xl leading-[1.1] mb-14 max-w-4xl">
                     Quiet Luxury for the <br class="hidden md:block"> Modern Home
                 </h1>
 
-                <button class="bg-black text-white px-12 py-4 text-[10px] uppercase tracking-[0.3em] font-medium hover:bg-neutral-800 transition-all duration-500 shadow-xl">
+                <button class="bg-black text-white px-14 py-5 text-[10px] uppercase tracking-[0.4em] font-medium hover:bg-[#2a2a2a] transition-all duration-500 shadow-2xl hover:scale-105">
                     Explore the Edit
                 </button>
             </div>
         </section>
-    </main>
 
+        <section class="px-8 py-24 w-full">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+                
+                <div class="md:col-span-2 md:row-span-2 relative group overflow-hidden cursor-pointer h-[500px] md:h-[900px]">
+                    <img src="img/Background.webp" alt="Decor" class="w-full h-full object-cover transition-transform duration-[1.5s] group-hover:scale-110">
+                    <div class="absolute inset-0 bg-black/10 group-hover:bg-black/20 transition-colors"></div>
+                    <div class="absolute bottom-12 left-12 text-white z-10">
+                        <p class="uppercase text-[10px] tracking-[0.4em] mb-3 opacity-90 font-light">Decor</p>
+                        <h3 class="serif-font text-2xl tracking-widest border-b border-white/40 pb-2 inline-block">SHOP COLLECTION</h3>
+                    </div>
+                </div>
 
-   
-<section class="px-[53px] py-20 w-full max-w-[1344px] mx-auto">
+                <div class="md:col-span-2 relative group overflow-hidden cursor-pointer h-[438px]">
+                    <img src="img/Background (1).webp" alt="Plants" class="w-full h-full object-cover transition-transform duration-[1.5s] group-hover:scale-110">
+                    <div class="absolute inset-0 bg-black/10 group-hover:bg-black/20 transition-colors"></div>
+                    <div class="absolute bottom-10 left-10 text-white z-10">
+                        <p class="uppercase text-[10px] tracking-[0.4em] mb-3 opacity-90 font-light">Plants</p>
+                        <h3 class="serif-font text-2xl tracking-widest">BROWSE GREENERY</h3>
+                    </div>
+                </div>
+
+                <div class="relative group overflow-hidden cursor-pointer h-[438px]">
+                    <img src="img/Background (2).webp" alt="Gifts" class="w-full h-full object-cover transition-transform duration-[1.5s] group-hover:scale-110">
+                    <div class="absolute inset-0 bg-black/10 group-hover:bg-black/20 transition-colors"></div>
+                    <div class="absolute bottom-8 left-8 text-white z-10">
+                        <p class="uppercase text-[10px] tracking-[0.3em] mb-1 opacity-90 font-light">Gifts</p>
+                        <p class="text-[11px] font-light tracking-[0.2em] italic">Curated Sets</p>
+                    </div>
+                </div>
+
+                <div class="relative group overflow-hidden cursor-pointer h-[438px]">
+                    <img src="img/Background (3).webp" alt="Accessories" class="w-full h-full object-cover transition-transform duration-[1.5s] group-hover:scale-110">
+                    <div class="absolute inset-0 bg-black/10 group-hover:bg-black/20 transition-colors"></div>
+                    <div class="absolute bottom-8 left-8 text-white z-10">
+                        <p class="uppercase text-[10px] tracking-[0.3em] mb-1 opacity-90 font-light">Accessories</p>
+                        <p class="text-[11px] font-light tracking-[0.2em] italic">Daily Essentials</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+       <section class="w-full py-12 px-4 md:px-0"> <div class="max-w-[1329px] mx-auto bg-[#1C1917] text-white flex flex-col md:flex-row items-center justify-between px-[53px] py-[48px] min-h-[233.89px] relative overflow-hidden group">
     
-    <div class="grid grid-cols-1 md:grid-cols-4 gap-[24px] h-auto md:h-[960px]">
-        
-       
-        <div class="md:col-span-2 md:row-span-2 relative group overflow-hidden cursor-pointer">
-            <img src="img/Background.webp" alt="Decor" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
-            <div class="absolute bottom-10 left-10 text-white">
-                <p class="uppercase text-[10px] tracking-[0.3em] mb-2 opacity-80">Decor</p>
-                <h3 class="serif-font text-xl tracking-wider">SHOP COLLECTION</h3>
-            </div>
-        </div>
-
-        
-        <div class="md:col-span-2 relative group overflow-hidden cursor-pointer h-[468px]">
-            <img src="img/Background (1).webp" alt="Plants" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
-            <div class="absolute bottom-10 left-10 text-white">
-                <p class="uppercase text-[10px] tracking-[0.3em] mb-2 opacity-80">Plants</p>
-                <h3 class="serif-font text-xl tracking-wider">BROWSE GREENERY</h3>
-            </div>
-        </div>
-
-        <!-- العنصر السفلي يسار (Gifts) -->
-        <div class="relative group overflow-hidden cursor-pointer h-[468px]">
-            <img src="img/Background (2).webp" alt="Gifts" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
-            <div class="absolute bottom-8 left-8 text-white">
-                <p class="uppercase text-[10px] tracking-[0.3em] mb-1 opacity-80">Gifts</p>
-                <p class="text-[11px] font-light tracking-[0.1em]">CURATED SETS</p>
-            </div>
-        </div>
-
-        <!-- العنصر السفلي يمين (Accessories) -->
-        <div class="relative group overflow-hidden cursor-pointer h-[468px]">
-            <img src="img/Background (3).webp" alt="Accessories" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
-            <div class="absolute bottom-8 left-8 text-white">
-                <p class="uppercase text-[10px] tracking-[0.3em] mb-1 opacity-80">Accessories</p>
-                <p class="text-[11px] font-light tracking-[0.1em]">DAILY ESSENTIALS</p>
-            </div>
-        </div>
-
+    <div class="z-10 text-center md:text-left">
+      <p class="uppercase tracking-[0.2em] text-[11px] mb-3 text-gray-400 font-light">
+        Limited Time Offer
+      </p>
+      <h2 class="serif-font text-3xl md:text-[36px] mb-4 leading-tight">
+        Summer Solstice Private Sale
+      </h2>
+      <p class="text-[14px] text-gray-400 max-w-[420px] font-light leading-[1.6] opacity-90">
+        Enjoy complimentary shipping and an exclusive 15% reduction on all textiles and soft furnishings through the weekend.
+      </p>
     </div>
+
+    <div class="mt-10 md:mt-0 flex flex-col items-center md:items-end z-10">
+      <div class="border border-white/20 p-5 mb-6 text-center min-w-[190px]">
+        <p class="text-[9px] uppercase tracking-[0.3em] text-gray-400 mb-2 font-light">Use Code</p>
+        <p class="serif-font text-[22px] tracking-[0.15em]">ATELIER15</p>
+      </div>
+      
+      <a href="#" class="text-[11px] uppercase tracking-[0.3em] border-b border-white pb-1 hover:text-gray-300 transition-all">
+        Shop The Sale
+      </a>
+    </div>
+
+    <div class="absolute inset-0 opacity-[0.05] pointer-events-none bg-[url('https://www.transparenttextures.com/patterns/dark-matter.png')]"></div>
+  </div>
 </section>
+
+
+
+
+
+
+
+        <footer>
+        </footer>
+
+    </main>
 
 </body>
 </html>
