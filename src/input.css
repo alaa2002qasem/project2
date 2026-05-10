@@ -37,3 +37,9 @@
         outline: none;
     }
 }
+@layer components {
+    /* تنسيق خاص لصور المنتجات المقترحة */
+    .product-card-img {
+        @apply w-full aspect-[3/4] object-cover bg-[#F9F9F9] transition-transform duration-500 hover:scale-105;
+    }
+}
