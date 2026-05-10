@@ -10,18 +10,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-    <style>
-        /* تطبيق الخطوط لتطابق الصفحة الأولى */
-        body { 
-            font-family: 'Inter', sans-serif; 
-        }
-        .serif-font { 
-            font-family: 'Playfair Display', serif !important; 
-        }
-    </style>
 </head>
 <body class="bg-[#fcfcfc] text-[#1C1917]">
+    
     <main class="w-full max-w-[1344px] mx-auto bg-white shadow-sm overflow-hidden">
     
         <header class="flex items-center justify-between px-8 py-8 border-b border-gray-50 relative bg-white z-50">
@@ -64,43 +55,56 @@
 
                 <div class="flex flex-col">
                     <p class="text-[10px] uppercase tracking-[0.4em] text-gray-400 mb-4">Botanicals / Artificial Trees</p>
-                    
                     <h1 class="serif-font text-4xl md:text-5xl mb-4 leading-tight">Fiddle Leaf Fig</h1>
                     <p class="text-xl text-gray-700 mb-8">$245.00</p>
-                    
                     <p class="text-sm text-gray-500 leading-relaxed mb-10 font-light">
                         The Fiddle Leaf Fig is the ultimate statement piece for a curated home. Meticulously handcrafted to mimic the organic imperfections of nature.
                     </p>
 
                     <div class="space-y-3 mb-12">
-                        <button class="w-full bg-black text-white py-5 text-[10px] uppercase tracking-[0.3em] font-medium hover:bg-neutral-800 transition-all">
-                            Add to Cart
-                        </button>
-                        <button class="w-full border border-gray-200 py-5 text-[10px] uppercase tracking-[0.3em] font-medium hover:bg-gray-50 transition-all">
-                            Buy It Now
-                        </button>
+                        <button class="w-full bg-black text-white py-5 text-[10px] uppercase tracking-[0.3em] font-medium hover:bg-neutral-800 transition-all">Add to Cart</button>
+                        <button class="w-full border border-gray-200 py-5 text-[10px] uppercase tracking-[0.3em] font-medium hover:bg-gray-50 transition-all">Buy It Now</button>
                     </div>
 
-                    <div class="border-t border-gray-100">
-                        <div class="py-4 border-b border-gray-100 flex justify-between items-center cursor-pointer group">
-                            <span class="text-[10px] uppercase tracking-[0.2em] font-medium">Specifications</span>
-                            <i class="fa-solid fa-plus text-[10px]"></i>
-                        </div>
-                        <div class="py-6 space-y-3 text-[11px] text-gray-500 uppercase tracking-widest">
-                            <div class="flex justify-between"><span>Height</span> <span>150cm (5ft)</span></div>
-                            <div class="flex justify-between"><span>Pot Diameter</span> <span>24cm</span></div>
-                            <div class="flex justify-between"><span>Material</span> <span>Premium Silk & Polymer</span></div>
-                        </div>
+                    <div class="border-t border-gray-100 w-full">
+                        <details class="group border-b border-gray-100 outline-none">
+                            <summary class="flex justify-between items-center py-5 cursor-pointer outline-none">
+                                <span class="text-[10px] uppercase tracking-[0.2em] font-medium text-[#1C1917]">Specifications</span>
+                                <i class="fa-solid fa-chevron-down text-[9px] text-gray-400 transition-transform duration-300 group-open:rotate-180"></i>
+                            </summary>
+                            <div class="pb-6 space-y-3 text-[11px] text-gray-500 uppercase tracking-widest font-light animate-fadeIn">
+                                <div class="flex justify-between"><span>Height</span> <span class="text-[#1C1917]">150cm (5ft)</span></div>
+                                <div class="flex justify-between"><span>Pot Diameter</span> <span class="text-[#1C1917]">24cm</span></div>
+                                <div class="flex justify-between"><span>Material</span> <span class="text-[#1C1917]">Premium Silk & Polymer</span></div>
+                                <div class="flex justify-between"><span>Pot Material</span> <span class="text-[#1C1917]">Hand-finished terracotta</span></div>
+                            </div>
+                        </details>
 
-                        <div class="py-4 border-b border-gray-100 flex justify-between items-center cursor-pointer">
-                            <span class="text-[10px] uppercase tracking-[0.2em] font-medium">Care Guide</span>
-                            <i class="fa-solid fa-plus text-[10px]"></i>
-                        </div>
-
-                        <div class="py-4 border-b border-gray-100 flex justify-between items-center cursor-pointer">
-                            <span class="text-[10px] uppercase tracking-[0.2em] font-medium">Shipping & Returns</span>
-                            <i class="fa-solid fa-plus text-[10px]"></i>
-                        </div>
+                        <details class="group border-b border-gray-100 outline-none">
+                            <summary class="flex justify-between items-center py-5 cursor-pointer outline-none">
+                                <span class="text-[10px] uppercase tracking-[0.2em] font-medium text-[#1C1917]">Care Guide</span>
+                                <i class="fa-solid fa-chevron-down text-[9px] text-gray-400 transition-transform duration-300 group-open:rotate-180"></i>
+                            </summary>
+                            <div class="pb-6 text-[11px] text-gray-500 leading-relaxed font-light animate-fadeIn">
+                                Keep away from direct sunlight. Dust lightly with a soft cloth once a month.
+                            </div>
+                        </details>
+                        <details class="group border-b border-gray-100 outline-none">
+<summary class="flex justify-between items-center py-5 cursor-pointer outline-none">
+        <span class="text-[10px] uppercase tracking-[0.2em] font-medium text-[#1C1917]">Shipping & Returns</span>
+        <i class="fa-solid fa-chevron-down text-[9px] text-gray-400 transition-transform duration-300 group-open:rotate-180"></i>
+    </summary>
+    <div class="pb-6 text-[11px] text-gray-500 leading-relaxed font-light animate-fadeIn">
+        <p class="mb-3">
+            نحن نقدم خدمة التوصيل "White-Glove" لجميع قطع الأثاث والنباتات الكبيرة لضمان وصولها بحالة مثالية.
+        </p>
+        <ul class="space-y-2 list-disc list-inside">
+            <li>شحن مجاني للطلبات التي تزيد عن $150.</li>
+            <li>يتم التوصيل خلال 3-5 أيام عمل.</li>
+            <li>نقبل الاسترجاع خلال 30 يوماً من تاريخ الاستلام بشرط أن يكون المنتج في حالته الأصلية.</li>
+        </ul>
+    </div>
+</details>
                     </div>
                 </div>
             </div>
